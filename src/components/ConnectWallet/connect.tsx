@@ -16,7 +16,7 @@ export default function ConnectWallet() {
   return (
     <div>
       {available.map((connector) => (
-        <button key={connector.id()} onClick={() => connect(connector)}>
+        <button key={connector.id()} onClick={() => {connect(connector)}}>
           {`Connect ${connector.name()}`}
         </button>
       ))}

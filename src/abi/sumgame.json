@@ -1,0 +1,94 @@
+[
+    {
+        "inputs": [],
+        "name": "getOwner",
+        "outputs": [
+            {
+                "name": "ownerAddr",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "owner_address",
+                "type": "felt"
+            }
+        ],
+        "name": "constructor",
+        "outputs": [],
+        "type": "constructor"
+    },
+    {
+        "inputs": [],
+        "name": "getCurrNumber",
+        "outputs": [
+            {
+                "name": "currNum",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getIsActive",
+        "outputs": [
+            {
+                "name": "isActiveBool",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getLastWinner",
+        "outputs": [
+            {
+                "name": "lastWinningAddr",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "address",
+                "type": "felt"
+            }
+        ],
+        "name": "getNumberWins",
+        "outputs": [
+            {
+                "name": "numWins",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "userAnswer",
+                "type": "felt"
+            }
+        ],
+        "name": "verifySum",
+        "outputs": [
+            {
+                "name": "isCorrect",
+                "type": "felt"
+            }
+        ],
+        "type": "function"
+    }
+]

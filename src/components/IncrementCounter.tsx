@@ -23,6 +23,12 @@ export function IncrementCounter() {
       >
         Increment Counter by 1
       </button>
+      <button onClick={async () => {
+        const res = await counter?.estimateFee.incrementCounter(1);
+        console.log(res);
+      }}>
+        Estimate fee
+      </button>
     </div>
   )
 }
