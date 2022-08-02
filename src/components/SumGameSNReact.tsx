@@ -35,8 +35,8 @@ const SumGameSNReact = () => {
     return (
         <>
                 <h2>Number Sum Game</h2>
-                <div>Is game active: {isActive.toString()}</div>
                 <div>Number: {currNumber}</div>
+                <div>Is game active: {isActive.toString()}</div>
                 <div>Last winner: {lastWinner}</div>
                 <div>My wins: {myWins}</div>
                 <input onChange={(e) => setMyAnswer(e.target.value)} value={myAnswer}/>

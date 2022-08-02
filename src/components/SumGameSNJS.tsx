@@ -82,9 +82,6 @@ const SumGameSNJS = () => {
     }
 
     function getGameJSX() {
-        if (!address)
-            return <div>Connect wallet to play!</div>;
-
         return (
             <>
                 <h2>Number Sum Game</h2>
