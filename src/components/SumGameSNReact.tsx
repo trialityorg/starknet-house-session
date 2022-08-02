@@ -6,8 +6,8 @@ import { useSumGameContract } from "~/hooks/sumgame";
 const SumGameSNReact = () => {
 
     /* User's connected wallet address */
-    const [myAnswer, setMyAnswer] = useState<string>('');
     const { account } = useStarknet();
+    const [myAnswer, setMyAnswer] = useState<string>('');
 
     /* State variables read from the contract */
     const [currNumber, setCurrNumber] = useState<string>('');
@@ -16,9 +16,6 @@ const SumGameSNReact = () => {
     const [myWins, setMyWins] = useState<number>(0);
 
     /* Read values from the contract, in watch mode */
-    function getCallObject(method: string, args: any[]) {
-       
-    }
 
     /* Update the state when the values have been read from the contract */
 

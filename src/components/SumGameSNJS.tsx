@@ -31,21 +31,16 @@ const SumGameSNJS = () => {
         }
     }
 
-    /* Interval to read the game state every 10 seconds */
-    let readGameStateInterval: any;
-    useEffect(() => {
-        
-    }, [starknet]);
-
     /* Call the contract to read the current game state */
     async function readGameState() {
         
     }
 
-    /* Helper function to call a view function in the contract */
-    async function callContract(entrypoint: string, calldata?: any[]) {
-
-    }
+    /* Interval to read the game state every 10 seconds */
+    let readGameStateInterval: any;
+    useEffect(() => {
+        
+    }, [starknet]);
 
     /* Solve the puzzle, post the sum to the contract */
     async function verifySum() {
@@ -54,11 +49,6 @@ const SumGameSNJS = () => {
 
     /* Solve the puzzles with multiple guesses at once */
     async function verifySumMulticall() {
-        
-    }
-
-    /* Execute a txn or list of txns */
-    async function execute(tx: any) {
         
     }
 
