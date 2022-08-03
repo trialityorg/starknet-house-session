@@ -1,5 +1,7 @@
 This is the repository from Starknet House session 9: 'End to end contract and app deployment' presented by [Triality](https://twitter.com/trialityorg).
 
+Learn more about Triality, the decentralized knowledge-sharing platform for web3 developers, at [https://triality.org](https://triality.org)
+
 YouTube recording to be posted soon!
 
 The empty skeleton for the UI can be found on branch [ui_skeleton](https://github.com/trialityorg/starknet-house-session/tree/ui_skeleton)
