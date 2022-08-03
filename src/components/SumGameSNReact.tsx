@@ -31,14 +31,14 @@ const SumGameSNReact = () => {
 
     return (
         <>
-                <h2>Number Sum Game</h2>
-                <div>Number: {currNumber}</div>
-                <div>Is game active: {isActive.toString()}</div>
-                <div>Last winner: {lastWinner}</div>
-                <div>My wins: {myWins}</div>
-                <input onChange={(e) => setMyAnswer(e.target.value)} value={myAnswer}/>
-                <button onClick={verifySum} disabled={!isActive}>Verify sum</button>
-                <button onClick={verifySumMulticall} disabled={!isActive}>Guess the world</button>
+            <h2>Number Sum Game</h2>
+            <div>Number: {currNumber}</div>
+            <div>Is game active: {isActive.toString()}</div>
+            <div>Last winner: {lastWinner}</div>
+            <div>My wins: {myWins}</div>
+            <input onChange={(e) => setMyAnswer(e.target.value)} value={myAnswer}/>
+            <button onClick={verifySum} disabled={!isActive}>Verify sum</button>
+            <button onClick={verifySumMulticall} disabled={!isActive}>Guess the world</button>
         </>
     );
 }
