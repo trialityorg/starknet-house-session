@@ -17,7 +17,7 @@ CONTRACT_FILE = os.path.join(
     os.path.dirname(__file__), "../contracts/demo.cairo")	
 
 def invoke_with_address(call, addr=OWNER_ADDRESS):
-    return call.invoke(caller_address=addr)
+    return call.execute(caller_address=addr)
 
 
 # Initializes the fake starknet and deploys the contract on it
@@ -62,7 +62,7 @@ async def test_check_guess_correct(contract):
 # Tests that the digit addition function works
 @pytest.mark.asyncio
 async def test_check_guess_incorrect(contract):
-    isCorrect = await contract.verifySum(11).invoke()
+    isCorrect = await invoke_with_address(contract.verifySum(11))
     isActive = await contract.getIsActive().call()
     assert isCorrect.result == (0,)
     assert isActive.result == (1,)
