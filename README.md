@@ -17,16 +17,18 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Compiling/Deployting the Contract
+## Compiling/Deploying the Contract
 
 Run the following to start your cairo environment `python3 -m venv ~/cairo_venv source ~/cairo_venv/bin/activate`
 
-Run the following from inside the contracts directory to compile `starknet-compile demo.cairo \ --output demo_compiled.json \ --abi demo_abi.json \ `
+Run the following from inside the contracts directory to compile `starknet-compile demo.cairo --output demo_compiled.json --abi demo_abi.json`
 
 Before you deploy make sure you set the test network `export STARKNET_NETWORK=alpha-goerli`
 
 To Deploy the contract run the following from inside the contracts director `starknet deploy --contract demo_compiled.json --no_wallet --inputs 0x06Cd3d538d5BF4b06D4bd8991CB88930Ec358250E914fF48A8A305dAe72FCEaa`
 Once deployed successfully, you can grab the contract address from the command line and view your contract on Voyager https://voyager.online/. It may take several minutes for your contract to be confirmed on L2.
+
+Once that has been confirmed, copy the contract address from the command line into the variable "SUM_GAME_CONTRACT_ADDRESS" to interact with your deployed contract.
 
 ## Testing the Contract
 
